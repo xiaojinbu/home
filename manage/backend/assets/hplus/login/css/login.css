@@ -1,0 +1,125 @@
+html{height: 100%;}
+body.signin {
+    background: #18c8f6;
+    height: auto;
+    background:url("../img/login-bg.jpg") no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: rgba(255,255,255,.95);
+}
+
+.signinpanel {
+    margin-top: 10%;
+}
+
+.signinpanel a {
+    color: #fff;
+}
+.signinpanel a:hover,
+.signinpanel a:focus {
+    color: #cfcdcd;
+}
+
+.signinpanel h2{
+    color: #04a4d7;
+    letter-spacing: 10px;
+}
+
+.signinpanel .logopanel {
+    float: none;
+    width: auto;
+    padding: 0;
+    background: none;
+}
+
+.signinpanel .signin-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.signinpanel .form-control {
+    display: block;
+    margin-top: 15px;
+}
+
+.signinpanel .uname {
+    background: url(../img/user.png) no-repeat 95% center;
+    background-color: rgba(23,75,125,0.3);
+    border-color: #196ca8;
+    color:#f4f4f4;
+}
+
+.signinpanel .pword {
+    background: #174b7d url(../img/locked.png) no-repeat 95% center;
+    background-color: rgba(23,75,125,0.3);
+    border-color: #196ca8;
+    color:#f4f4f4;
+}
+
+.signinpanel .pemail {
+    background: #174b7d url(../img/email.png) no-repeat 95% center;
+    background-color: rgba(23,75,125,0.3);
+    border-color: #196ca8;
+    color:#f4f4f4;
+}
+
+.signinpanel .btn {
+    margin-top: 15px;
+}
+
+.signinpanel .login-form {
+    max-width: 645px;
+    padding-right: 50px;
+}
+.signinpanel #login-form, .signinpanel #signup-form {
+    width: 100%;
+    height: 100%;
+    background-image:url("../img/frame.png");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    padding: 30px 60px 60px 60px;
+}
+
+.signup-footer {
+    padding-bottom: 15px;
+    position: fixed;
+}
+
+@media screen and (max-width: 768px) {
+    .signinpanel,
+    .signuppanel {
+        margin: 0 auto;
+        width: 420px!important;
+        padding: 20px;
+    }
+    .signinpanel form {
+        margin-top: 20px;
+    }
+    .signup-footer {
+        margin-bottom: 10px;
+    }
+    .signuppanel .form-control {
+        margin-bottom: 10px;
+    }
+    .signup-footer .pull-left,
+    .signup-footer .pull-right {
+        float: none !important;
+        text-align: center;
+    }
+    .signinpanel .signin-info ul {
+        display: none;
+    }
+    .signinpanel #login-form, .signinpanel #signup-form {
+        padding: 15px 30px 30px 30px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .signinpanel,
+    .signuppanel {
+        margin:0 20px;
+        width:auto;
+    }
+}

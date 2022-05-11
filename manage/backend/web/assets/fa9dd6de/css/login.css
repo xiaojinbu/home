@@ -1,0 +1,98 @@
+html{height: 100%;}
+body.signin {
+    background: #18c8f6;
+    height: auto;
+    background:url("../img/background.jpg") no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: rgba(255,255,255,.95);
+}
+
+.signinpanel a:hover,
+.signinpanel a:focus {
+    color: #cfcdcd;
+}
+
+.signinpanel .logopanel {
+    float: none;
+    width: auto;
+    padding: 0;
+    background: none;
+}
+
+.signinpanel a {
+    color: #666;
+}
+
+.signinpanel {
+    margin-top: 10rem;
+}
+
+.login-text {
+    font-size: 24px;
+    color: #000;
+}
+
+.login-text-blue {
+    color: rgb(0, 84, 167);
+}
+
+.signinpanel .login-form {
+    margin-top: 5rem;
+    background: #fff;
+    max-width: 845px;
+    height: 400px;
+    border-radius: 3%;
+    box-shadow: 0 0 10px rgba(213, 232, 242);
+}
+
+.login-form .login-form2 {
+    margin-left: 5rem;
+    width: 25rem;
+}
+.login-form .login-form2 .boss-logo {
+    width: 150px;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+}
+
+.login-form .login-form2 .form-control {
+    border-radius: 50px;
+    background: rgb(229, 229, 229);
+    color: #0a0a0a;
+}
+
+.login-form .login-form2 .login-button {
+    width: 183px;
+    height: 47px;
+    background:url('../img/login.png');
+    border: 0;
+    outline:none
+}
+
+.signup-footer {
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    position: fixed;
+    color: #000;
+}
+
+.brand-images {
+    margin-top: 8rem;
+    color: #666;
+}
+.brand-images p {
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 1600px) {
+    .login-element-img {
+        display: none;
+    }
+    .login-form .login-form2 {
+        margin-left: 30%;
+    }
+}
+

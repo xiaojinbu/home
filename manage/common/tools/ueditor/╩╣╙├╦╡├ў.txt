@@ -1,0 +1,32 @@
+详情请见README.md
+
+如下是具体的操作说明：
+前端展示界面使用widget
+后台上传处理使用action
+前端：
+use common\tools\ueditor\UeditorWidget;
+echo $form->field($model, 'desc')->widget(UeditorWidget::className(), [
+    'clientOptions' => [
+        'serverUrl' => yii\helpers\Url::to(['ueditor']),
+    ],
+]);
+
+后端：
+public function actions()
+{
+    return [
+        'ueditor' => [//与上述配置一样即可
+            'class' => 'common\tools\ueditor\UeditorAction',
+        ]
+    ];
+}
+
+
+服务器端上传配置：
+config.php
+
+前端配置：
+assets/ueditor1.4.3.3/ueditor.config.js
+
+
+

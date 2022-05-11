@@ -1,0 +1,1310 @@
+2022-05-10 10:52:13 [::1][150][2opf9cq5vjr91n2tvpsosb5flq][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "index". in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('index', Array)
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#2 {main}
+2022-05-10 10:52:18 [::1][150][2opf9cq5vjr91n2tvpsosb5flq][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.company' doesn't exist in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php:1290
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1290): PDOStatement->execute()
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1158): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(413): yii\db\Command->queryInternal('fetch', NULL)
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Query.php(274): yii\db\Command->queryOne()
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveQuery.php(304): yii\db\Query->one(NULL)
+#5 E:\phpstudy\phpstudy_pro\WWW\manage\backend\themes\classic\layouts\iframe-main.php(58): yii\db\ActiveQuery->one()
+#6 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(348): require('E:\\phpstudy\\php...')
+#7 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('E:\\phpstudy\\php...', '[<span class="s...')
+#8 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('E:\\phpstudy\\php...', Array, Object(app\modules\common\controllers\HomeController))
+#9 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('\n')
+#10 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\common\controllers\HomeController.php(64): yii\base\Controller->render('index', Array)
+#11 [internal function]: app\modules\common\controllers\HomeController->actionIndex()
+#12 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#13 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#14 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#15 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#16 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#18 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.company' doesn't exist
+The SQL being executed was: SELECT * FROM `company` WHERE `id`=1 in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Schema.php:674
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1158): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(413): yii\db\Command->queryInternal('fetch', NULL)
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Query.php(274): yii\db\Command->queryOne()
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveQuery.php(304): yii\db\Query->one(NULL)
+#5 E:\phpstudy\phpstudy_pro\WWW\manage\backend\themes\classic\layouts\iframe-main.php(58): yii\db\ActiveQuery->one()
+#6 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(348): require('E:\\phpstudy\\php...')
+#7 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('E:\\phpstudy\\php...', '[<span class="s...')
+#8 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('E:\\phpstudy\\php...', Array, Object(app\modules\common\controllers\HomeController))
+#9 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('\n')
+#10 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\common\controllers\HomeController.php(64): yii\base\Controller->render('index', Array)
+#11 [internal function]: app\modules\common\controllers\HomeController->actionIndex()
+#12 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#13 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#14 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#15 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#16 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#18 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'test.company' doesn't exist
+)
+
+2022-05-10 10:59:44 [::1][150][sd4e63e93d9km0p355480lrjfs][error][yii\base\ErrorException:2] yii\base\ErrorException: in_array() expects parameter 2 to be array, null given in E:\phpstudy\phpstudy_pro\WWW\manage\common\models\admin\User.php:322
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'in_array() expe...', 'E:\\phpstudy\\php...', 322, Array)
+#1 E:\phpstudy\phpstudy_pro\WWW\manage\common\models\admin\User.php(322): in_array(150, NULL)
+#2 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\admin\filters\RbacFilter.php(51): common\models\admin\User->getIsAdmin()
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\ActionFilter.php(77): app\modules\admin\filters\RbacFilter->beforeAction(Object(yii\base\InlineAction))
+#4 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#6 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(700): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#7 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(145): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#8 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#9 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#10 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#12 {main}
+2022-05-10 11:00:16 [::1][150][sd4e63e93d9km0p355480lrjfs][error][yii\base\ErrorException:2] yii\base\ErrorException: in_array() expects parameter 2 to be array, null given in E:\phpstudy\phpstudy_pro\WWW\manage\common\models\admin\User.php:322
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'in_array() expe...', 'E:\\phpstudy\\php...', 322, Array)
+#1 E:\phpstudy\phpstudy_pro\WWW\manage\common\models\admin\User.php(322): in_array(150, NULL)
+#2 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\admin\filters\RbacFilter.php(51): common\models\admin\User->getIsAdmin()
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\ActionFilter.php(77): app\modules\admin\filters\RbacFilter->beforeAction(Object(yii\base\InlineAction))
+#4 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#6 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(700): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#7 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(145): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#8 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#9 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#10 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#12 {main}
+2022-05-10 11:05:05 [::1][150][sd4e63e93d9km0p355480lrjfs][error][Error] Error: Class 'app\widgets\Alert' not found in E:\phpstudy\phpstudy_pro\WWW\manage\backend\themes\classic\layouts\main.php:50
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(348): require()
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('E:\\phpstudy\\php...', Array)
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('E:\\phpstudy\\php...', Array, Object(app\modules\system\controllers\SupplierController))
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('\n<div class="ca...')
+#4 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\system\controllers\SupplierController.php(44): yii\base\Controller->render('index', Array)
+#5 [internal function]: app\modules\system\controllers\SupplierController->actionIndex()
+#6 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#9 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#10 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#12 {main}
+2022-05-10 11:12:43 [::1][150][sd4e63e93d9km0p355480lrjfs][error][yii\db\Exception] PDOException: SQLSTATE[01000]: Warning: 1265 Data truncated for column 't_status' at row 1 in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php:1290
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1290): PDOStatement->execute()
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `su...')
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Schema.php(432): yii\db\Command->execute()
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('supplier', Array)
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\system\controllers\SupplierController.php(69): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\modules\system\controllers\SupplierController->actionCreate()
+#8 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#12 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[01000]: Warning: 1265 Data truncated for column 't_status' at row 1
+The SQL being executed was: INSERT INTO `supplier` (`name`, `code`, `t_status`) VALUES ('', '', '') in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Schema.php:674
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `su...')
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `su...')
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Schema.php(432): yii\db\Command->execute()
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('supplier', Array)
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\system\controllers\SupplierController.php(69): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\modules\system\controllers\SupplierController->actionCreate()
+#8 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#12 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 01000
+    [1] => 1265
+    [2] => Data truncated for column 't_status' at row 1
+)
+
+2022-05-10 11:13:12 [::1][150][sd4e63e93d9km0p355480lrjfs][error][yii\db\Exception] PDOException: SQLSTATE[01000]: Warning: 1265 Data truncated for column 't_status' at row 1 in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php:1290
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1290): PDOStatement->execute()
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `su...')
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Schema.php(432): yii\db\Command->execute()
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('supplier', Array)
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\system\controllers\SupplierController.php(69): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\modules\system\controllers\SupplierController->actionCreate()
+#8 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#12 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[01000]: Warning: 1265 Data truncated for column 't_status' at row 1
+The SQL being executed was: INSERT INTO `supplier` (`name`, `code`, `t_status`) VALUES ('', '', '') in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Schema.php:674
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `su...')
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `su...')
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Schema.php(432): yii\db\Command->execute()
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('supplier', Array)
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\system\controllers\SupplierController.php(69): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\modules\system\controllers\SupplierController->actionCreate()
+#8 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#12 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 01000
+    [1] => 1265
+    [2] => Data truncated for column 't_status' at row 1
+)
+
+2022-05-10 11:14:14 [::1][150][sd4e63e93d9km0p355480lrjfs][error][yii\db\Exception] PDOException: SQLSTATE[01000]: Warning: 1265 Data truncated for column 't_status' at row 1 in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php:1290
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1290): PDOStatement->execute()
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `su...')
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Schema.php(432): yii\db\Command->execute()
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('supplier', Array)
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\system\controllers\SupplierController.php(69): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\modules\system\controllers\SupplierController->actionCreate()
+#8 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#12 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[01000]: Warning: 1265 Data truncated for column 't_status' at row 1
+The SQL being executed was: INSERT INTO `supplier` (`name`, `code`, `t_status`) VALUES ('', '', '') in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Schema.php:674
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `su...')
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `su...')
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Schema.php(432): yii\db\Command->execute()
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('supplier', Array)
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\system\controllers\SupplierController.php(69): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\modules\system\controllers\SupplierController->actionCreate()
+#8 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#12 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 01000
+    [1] => 1265
+    [2] => Data truncated for column 't_status' at row 1
+)
+
+2022-05-10 11:14:23 [::1][150][sd4e63e93d9km0p355480lrjfs][error][yii\db\Exception] PDOException: SQLSTATE[01000]: Warning: 1265 Data truncated for column 't_status' at row 1 in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php:1290
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1290): PDOStatement->execute()
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `su...')
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Schema.php(432): yii\db\Command->execute()
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('supplier', Array)
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\system\controllers\SupplierController.php(69): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\modules\system\controllers\SupplierController->actionCreate()
+#8 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#12 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[01000]: Warning: 1265 Data truncated for column 't_status' at row 1
+The SQL being executed was: INSERT INTO `supplier` (`name`, `code`, `t_status`) VALUES ('', '', '') in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Schema.php:674
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `su...')
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `su...')
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Schema.php(432): yii\db\Command->execute()
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('supplier', Array)
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\system\controllers\SupplierController.php(69): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\modules\system\controllers\SupplierController->actionCreate()
+#8 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#12 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 01000
+    [1] => 1265
+    [2] => Data truncated for column 't_status' at row 1
+)
+
+2022-05-10 11:14:55 [::1][150][sd4e63e93d9km0p355480lrjfs][error][yii\db\Exception] PDOException: SQLSTATE[01000]: Warning: 1265 Data truncated for column 't_status' at row 1 in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php:1290
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1290): PDOStatement->execute()
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `su...')
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Schema.php(432): yii\db\Command->execute()
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('supplier', Array)
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\system\controllers\SupplierController.php(69): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\modules\system\controllers\SupplierController->actionCreate()
+#8 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#12 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[01000]: Warning: 1265 Data truncated for column 't_status' at row 1
+The SQL being executed was: INSERT INTO `supplier` (`name`, `code`, `t_status`) VALUES ('', '', '') in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Schema.php:674
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `su...')
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `su...')
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Schema.php(432): yii\db\Command->execute()
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('supplier', Array)
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\system\controllers\SupplierController.php(69): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\modules\system\controllers\SupplierController->actionCreate()
+#8 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#12 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 01000
+    [1] => 1265
+    [2] => Data truncated for column 't_status' at row 1
+)
+
+2022-05-10 11:15:03 [::1][150][sd4e63e93d9km0p355480lrjfs][error][yii\db\IntegrityException] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'uk_code' in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php:1290
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1290): PDOStatement->execute()
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `su...')
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Schema.php(432): yii\db\Command->execute()
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('supplier', Array)
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\system\controllers\SupplierController.php(69): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\modules\system\controllers\SupplierController->actionCreate()
+#8 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#12 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'uk_code'
+The SQL being executed was: INSERT INTO `supplier` (`name`, `code`, `t_status`) VALUES ('', '', 'ok') in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Schema.php:674
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `su...')
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `su...')
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Schema.php(432): yii\db\Command->execute()
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('supplier', Array)
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\system\controllers\SupplierController.php(69): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\modules\system\controllers\SupplierController->actionCreate()
+#8 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#12 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1062
+    [2] => Duplicate entry '' for key 'uk_code'
+)
+
+2022-05-10 11:22:06 [::1][150][sd4e63e93d9km0p355480lrjfs][error][ParseError] ParseError: syntax error, unexpected ')', expecting ',' or ';' in E:\phpstudy\phpstudy_pro\WWW\manage\backend\themes\classic\layouts\main.php:38
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('E:\\phpstudy\\php...', Array)
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('E:\\phpstudy\\php...', Array, Object(app\modules\system\controllers\SupplierController))
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('\n<div class="ca...')
+#3 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\system\controllers\SupplierController.php(44): yii\base\Controller->render('index', Array)
+#4 [internal function]: app\modules\system\controllers\SupplierController->actionIndex()
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#9 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#11 {main}
+2022-05-10 11:26:28 [::1][150][sd4e63e93d9km0p355480lrjfs][error][yii\db\Exception] PDOException: SQLSTATE[01000]: Warning: 1265 Data truncated for column 't_status' at row 1 in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php:1290
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1290): PDOStatement->execute()
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `su...')
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Schema.php(432): yii\db\Command->execute()
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('supplier', Array)
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\system\controllers\SupplierController.php(69): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\modules\system\controllers\SupplierController->actionCreate()
+#8 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#12 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[01000]: Warning: 1265 Data truncated for column 't_status' at row 1
+The SQL being executed was: INSERT INTO `supplier` (`name`, `code`, `t_status`) VALUES ('', '', '') in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Schema.php:674
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `su...')
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `su...')
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Schema.php(432): yii\db\Command->execute()
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('supplier', Array)
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\system\controllers\SupplierController.php(69): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\modules\system\controllers\SupplierController->actionCreate()
+#8 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#12 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 01000
+    [1] => 1265
+    [2] => Data truncated for column 't_status' at row 1
+)
+
+2022-05-11 00:42:44 [::1][4][84trfcfj7s6suertbfm2nfnlmi][error][Error] Error: Class 'Company' not found in E:\phpstudy\phpstudy_pro\WWW\manage\backend\themes\classic\modules\system\views\supplier\index.php:87
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(348): require()
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('E:\\phpstudy\\php...', Array)
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('E:\\phpstudy\\php...', Array, Object(app\modules\system\controllers\SupplierController))
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(app\modules\system\controllers\SupplierController))
+#4 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\system\controllers\SupplierController.php(44): yii\base\Controller->render('index', Array)
+#5 [internal function]: app\modules\system\controllers\SupplierController->actionIndex()
+#6 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#9 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#10 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#12 {main}
+2022-05-11 00:49:49 [::1][4][84trfcfj7s6suertbfm2nfnlmi][error][Error] Error: Class 'common\models\system\Setting' not found in E:\phpstudy\phpstudy_pro\WWW\manage\backend\bootstrap\BootstrapConfig.php:40
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\manage\backend\bootstrap\BootstrapConfig.php(30): app\bootstrap\BootstrapConfig->initc()
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(327): app\bootstrap\BootstrapConfig->bootstrap(Object(yii\web\Application))
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#6 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(25): yii\base\Application->__construct(Array)
+#7 {main}
+2022-05-11 00:50:05 [::1][4][84trfcfj7s6suertbfm2nfnlmi][error][Error] Error: Class 'common\models\system\Setting' not found in E:\phpstudy\phpstudy_pro\WWW\manage\backend\bootstrap\BootstrapConfig.php:40
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\manage\backend\bootstrap\BootstrapConfig.php(30): app\bootstrap\BootstrapConfig->initc()
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(327): app\bootstrap\BootstrapConfig->bootstrap(Object(yii\web\Application))
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#6 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(25): yii\base\Application->__construct(Array)
+#7 {main}
+2022-05-11 00:56:39 [::1][4][84trfcfj7s6suertbfm2nfnlmi][error][yii\base\ErrorException:64] yii\base\ErrorException: Illegal offset type in E:\phpstudy\phpstudy_pro\WWW\manage\backend\themes\classic\modules\system\views\supplier\index.php:60
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2022-05-11 01:11:27 [::1][4][84trfcfj7s6suertbfm2nfnlmi][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\grid\CheckboxColumn::divOptions in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\BaseObject.php:163
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\BaseYii.php(546): yii\base\BaseObject->__set('divOptions', Array)
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\grid\CheckboxColumn), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\di\Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\grid\\Checkb...', Array, Array)
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\grid\\Checkb...', Array, Array)
+#6 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\grid\GridView.php(550): yii\BaseYii::createObject(Array)
+#7 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\grid\GridView.php(288): yii\grid\GridView->initColumns()
+#8 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\grid\GridView->init()
+#9 [internal function]: yii\base\BaseObject->__construct(Array)
+#10 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\di\Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#11 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#12 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#13 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Widget.php(137): yii\BaseYii::createObject(Array)
+#14 E:\phpstudy\phpstudy_pro\WWW\manage\backend\themes\classic\modules\system\views\supplier\index.php(151): yii\base\Widget::widget(Array)
+#15 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(348): require('E:\\phpstudy\\php...')
+#16 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('E:\\phpstudy\\php...', Array)
+#17 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('E:\\phpstudy\\php...', Array, Object(app\modules\system\controllers\SupplierController))
+#18 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(app\modules\system\controllers\SupplierController))
+#19 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\system\controllers\SupplierController.php(44): yii\base\Controller->render('index', Array)
+#20 [internal function]: app\modules\system\controllers\SupplierController->actionIndex()
+#21 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#22 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#23 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#24 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#25 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#27 {main}
+2022-05-11 01:18:42 [::1][4][84trfcfj7s6suertbfm2nfnlmi][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\grid\CheckboxColumn::filter in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\BaseObject.php:163
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\BaseYii.php(546): yii\base\BaseObject->__set('filter', Array)
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\grid\CheckboxColumn), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\di\Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\grid\\Checkb...', Array, Array)
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\grid\\Checkb...', Array, Array)
+#6 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\grid\GridView.php(550): yii\BaseYii::createObject(Array)
+#7 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\grid\GridView.php(288): yii\grid\GridView->initColumns()
+#8 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\grid\GridView->init()
+#9 [internal function]: yii\base\BaseObject->__construct(Array)
+#10 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\di\Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#11 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#12 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#13 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Widget.php(137): yii\BaseYii::createObject(Array)
+#14 E:\phpstudy\phpstudy_pro\WWW\manage\backend\themes\classic\modules\system\views\supplier\index.php(153): yii\base\Widget::widget(Array)
+#15 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(348): require('E:\\phpstudy\\php...')
+#16 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('E:\\phpstudy\\php...', Array)
+#17 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('E:\\phpstudy\\php...', Array, Object(app\modules\system\controllers\SupplierController))
+#18 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(app\modules\system\controllers\SupplierController))
+#19 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\system\controllers\SupplierController.php(44): yii\base\Controller->render('index', Array)
+#20 [internal function]: app\modules\system\controllers\SupplierController->actionIndex()
+#21 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#22 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#23 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#24 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#25 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#27 {main}
+2022-05-11 01:39:55 [::1][4][84trfcfj7s6suertbfm2nfnlmi][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: system/supplier/javascript:; in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('javascript:;', Array)
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#2 {main}
+2022-05-11 01:41:44 [::1][4][84trfcfj7s6suertbfm2nfnlmi][error][ParseError] ParseError: Invalid indentation - tabs and spaces cannot be mixed in E:\phpstudy\phpstudy_pro\WWW\manage\backend\themes\classic\modules\system\views\supplier\index.php:25
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('E:\\phpstudy\\php...', Array)
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('E:\\phpstudy\\php...', Array, Object(app\modules\system\controllers\SupplierController))
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(app\modules\system\controllers\SupplierController))
+#3 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\system\controllers\SupplierController.php(44): yii\base\Controller->render('index', Array)
+#4 [internal function]: app\modules\system\controllers\SupplierController->actionIndex()
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#9 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#11 {main}
+2022-05-11 01:42:05 [::1][4][84trfcfj7s6suertbfm2nfnlmi][error][ParseError] ParseError: Invalid indentation - tabs and spaces cannot be mixed in E:\phpstudy\phpstudy_pro\WWW\manage\backend\themes\classic\modules\system\views\supplier\index.php:25
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('E:\\phpstudy\\php...', Array)
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('E:\\phpstudy\\php...', Array, Object(app\modules\system\controllers\SupplierController))
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(app\modules\system\controllers\SupplierController))
+#3 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\system\controllers\SupplierController.php(44): yii\base\Controller->render('index', Array)
+#4 [internal function]: app\modules\system\controllers\SupplierController->actionIndex()
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#9 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#11 {main}
+2022-05-11 01:53:59 [::1][4][84trfcfj7s6suertbfm2nfnlmi][error][Error] Error: Class 'Url' not found in E:\phpstudy\phpstudy_pro\WWW\manage\backend\themes\classic\modules\system\views\supplier\index.php:22
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(348): require()
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('E:\\phpstudy\\php...', Array)
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('E:\\phpstudy\\php...', Array, Object(app\modules\system\controllers\SupplierController))
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(app\modules\system\controllers\SupplierController))
+#4 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\system\controllers\SupplierController.php(44): yii\base\Controller->render('index', Array)
+#5 [internal function]: app\modules\system\controllers\SupplierController->actionIndex()
+#6 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#9 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#10 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#12 {main}
+2022-05-11 01:54:16 [::1][4][84trfcfj7s6suertbfm2nfnlmi][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: system/supplier/export in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('export', Array)
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#2 {main}
+2022-05-11 01:54:41 [::1][4][84trfcfj7s6suertbfm2nfnlmi][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: system/supplier/export in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('export', Array)
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#2 {main}
+2022-05-11 01:54:48 [::1][4][84trfcfj7s6suertbfm2nfnlmi][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: system/supplier/export in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('export', Array)
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#2 {main}
+2022-05-11 02:01:45 [::1][4][84trfcfj7s6suertbfm2nfnlmi][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: system/supplier/export in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('export', Array)
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#2 {main}
+2022-05-11 09:56:12 [::1][4][cn4k4frnmphti4t73a0ea8i8ll][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "system/user/logout". in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/user/log...', Array)
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#2 {main}
+2022-05-11 09:56:28 [::1][4][cn4k4frnmphti4t73a0ea8i8ll][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "system/admin/user/logout". in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/admin/us...', Array)
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#2 {main}
+2022-05-11 09:56:44 [::1][4][cn4k4frnmphti4t73a0ea8i8ll][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: POST. in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\filters\VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('logout', Array)
+#6 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/user/logo...', Array)
+#7 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#9 {main}
+2022-05-11 09:57:47 [::1][4][cn4k4frnmphti4t73a0ea8i8ll][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: POST. in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\filters\VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('logout', Array)
+#6 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/user/logo...', Array)
+#7 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#9 {main}
+2022-05-11 10:01:24 [::1][150][n26vlc7nfsqom65f5tv21i9b5s][error][yii\db\Exception] PDOException: SQLSTATE[01000]: Warning: 1265 Data truncated for column 't_status' at row 1 in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php:1290
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1290): PDOStatement->execute()
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `su...')
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Schema.php(432): yii\db\Command->execute()
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('supplier', Array)
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\system\controllers\SupplierController.php(69): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\modules\system\controllers\SupplierController->actionCreate()
+#8 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#12 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[01000]: Warning: 1265 Data truncated for column 't_status' at row 1
+The SQL being executed was: INSERT INTO `supplier` (`name`, `code`, `t_status`) VALUES ('', '', '') in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Schema.php:674
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `su...')
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `su...')
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Schema.php(432): yii\db\Command->execute()
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('supplier', Array)
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\system\controllers\SupplierController.php(69): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\modules\system\controllers\SupplierController->actionCreate()
+#8 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#12 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 01000
+    [1] => 1265
+    [2] => Data truncated for column 't_status' at row 1
+)
+
+2022-05-11 10:05:11 [::1][150][fnetobq1gdf7v1rntkg82m8t63][error][ParseError] ParseError: syntax error, unexpected 'class' (T_CLASS), expecting ',' or ';' in E:\phpstudy\phpstudy_pro\WWW\manage\backend\themes\classic\modules\system\views\supplier\index.php:57
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('E:\\phpstudy\\php...', Array)
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('E:\\phpstudy\\php...', Array, Object(app\modules\system\controllers\SupplierController))
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(app\modules\system\controllers\SupplierController))
+#3 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\system\controllers\SupplierController.php(44): yii\base\Controller->render('index', Array)
+#4 [internal function]: app\modules\system\controllers\SupplierController->actionIndex()
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#9 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#11 {main}
+2022-05-11 10:10:21 [::1][-][g0n2s30n7gpiouus6j98in8ck2][error][yii\redis\Connection] Failed to open redis DB connection (112.74.201.26:6379, database=2): 10060 - �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+
+    in E:\phpstudy\phpstudy_pro\WWW\manage\common\models\system\Setting.php:131
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\bootstrap\BootstrapConfig.php:40
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\bootstrap\BootstrapConfig.php:30
+2022-05-11 10:10:21 [::1][-][g0n2s30n7gpiouus6j98in8ck2][error][yii\db\Exception] yii\db\Exception: Failed to open redis DB connection (112.74.201.26:6379, database=2): 10060 - �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2-redis\src\Connection.php:565
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2-redis\src\Connection.php(665): yii\redis\Connection->open()
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2-redis\src\Cache.php(154): yii\redis\Connection->executeCommand('GET', Array)
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\caching\Cache.php(134): yii\redis\Cache->getValue('c39bc38337f19c8...')
+#3 E:\phpstudy\phpstudy_pro\WWW\manage\common\models\system\Setting.php(131): yii\caching\Cache->get('c39bc38337f19c8...')
+#4 E:\phpstudy\phpstudy_pro\WWW\manage\backend\bootstrap\BootstrapConfig.php(40): common\models\system\Setting->getCache()
+#5 E:\phpstudy\phpstudy_pro\WWW\manage\backend\bootstrap\BootstrapConfig.php(30): app\bootstrap\BootstrapConfig->initc()
+#6 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(327): app\bootstrap\BootstrapConfig->bootstrap(Object(yii\web\Application))
+#7 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#8 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#9 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#10 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#11 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(25): yii\base\Application->__construct(Array)
+#12 {main}
+Additional Information:
+�������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+
+2022-05-11 10:11:53 [::1][150][66hr7kebtfomsauiq1v9sji4cj][error][yii\base\InvalidConfigException] ReflectionException: Class app\modules\admin\controllers\VerbFilter does not exist in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\di\Container.php:431
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\di\Container.php(431): ReflectionClass->__construct('app\\modules\\adm...')
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\di\Container.php(365): yii\di\Container->getDependencies('app\\modules\\adm...')
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('app\\modules\\adm...', Array, Array)
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('app\\modules\\adm...', Array, Array)
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(750): yii\BaseYii::createObject(Array)
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(734): yii\base\Component->attachBehaviorInternal('verbs', Array)
+#6 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(417): yii\base\Component->ensureBehaviors()
+#7 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\admin\filters\RbacFilter.php(94): yii\base\Component->hasMethod('allowAction')
+#8 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\ActionFilter.php(73): app\modules\admin\filters\RbacFilter->isActive(Object(yii\base\InlineAction))
+#9 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#10 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#11 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(700): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#12 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(145): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#13 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('logout', Array)
+#14 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/user/logo...', Array)
+#15 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#17 {main}
+
+Next yii\base\InvalidConfigException: Failed to instantiate component or class "app\modules\admin\controllers\VerbFilter". in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\di\Container.php:433
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\di\Container.php(365): yii\di\Container->getDependencies('app\\modules\\adm...')
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('app\\modules\\adm...', Array, Array)
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('app\\modules\\adm...', Array, Array)
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(750): yii\BaseYii::createObject(Array)
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(734): yii\base\Component->attachBehaviorInternal('verbs', Array)
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(417): yii\base\Component->ensureBehaviors()
+#6 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\admin\filters\RbacFilter.php(94): yii\base\Component->hasMethod('allowAction')
+#7 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\ActionFilter.php(73): app\modules\admin\filters\RbacFilter->isActive(Object(yii\base\InlineAction))
+#8 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#9 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#10 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(700): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#11 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(145): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#12 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('logout', Array)
+#13 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/user/logo...', Array)
+#14 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#16 {main}
+2022-05-11 10:12:22 [::1][150][66hr7kebtfomsauiq1v9sji4cj][error][Error] Error: Class 'app\modules\admin\controllers\Yii' not found in E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\admin\controllers\UserController.php:72
+Stack trace:
+#0 [internal function]: app\modules\admin\controllers\UserController->actionLogout()
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('logout', Array)
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/user/logo...', Array)
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#7 {main}
+2022-05-11 10:23:12 [::1][-][a3ucm1gc9mu8jo9lt2bmmi7vbq][error][Error] Error: Class 'common\models\admin\form\Login' not found in E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\admin\controllers\UserController.php:48
+Stack trace:
+#0 [internal function]: app\modules\admin\controllers\UserController->actionLogin()
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/user/logi...', Array)
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#7 {main}
+2022-05-11 10:40:04 [::1][-][3v1sc8cdngrtgrqvanri8miidj][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: admin/user/favicon.ico in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('favicon.ico', Array)
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/user/favi...', Array)
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#2 {main}
+2022-05-11 10:40:10 [::1][150][eab2rm38ugqgj40hds4lh2lb4c][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: admin/user/favicon.ico in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('favicon.ico', Array)
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/user/favi...', Array)
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#2 {main}
+2022-05-11 11:18:58 [::1][150][plinidmu4nv6qvfj7hh2pspur8][error][ParseError] ParseError: syntax error, unexpected '$fileName' (T_VARIABLE) in E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\system\controllers\SupplierController.php:61
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\modules\\sys...')
+#1 [internal function]: spl_autoload_call('app\\modules\\sys...')
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(637): class_exists('app\\modules\\sys...')
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(596): yii\base\Module->createControllerByID('supplier')
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(588): yii\base\Module->createController('index')
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Module->createController('supplier/index')
+#6 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#7 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#9 {main}
+2022-05-11 11:20:38 [::1][150][plinidmu4nv6qvfj7hh2pspur8][error][yii\base\ErrorException:2] yii\base\ErrorException: implode(): Invalid arguments passed in E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\system\controllers\SupplierController.php:51
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'implode(): Inva...', 'E:\\phpstudy\\php...', 51, Array)
+#1 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\system\controllers\SupplierController.php(51): implode(',', '')
+#2 [internal function]: app\modules\system\controllers\SupplierController->actionExport('')
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('export', Array)
+#6 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#7 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#9 {main}
+2022-05-11 11:20:49 [::1][150][plinidmu4nv6qvfj7hh2pspur8][error][yii\base\ErrorException:2] yii\base\ErrorException: implode(): Invalid arguments passed in E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\system\controllers\SupplierController.php:51
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'implode(): Inva...', 'E:\\phpstudy\\php...', 51, Array)
+#1 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\system\controllers\SupplierController.php(51): implode(',', '3,4,6,7,8,9,10,...')
+#2 [internal function]: app\modules\system\controllers\SupplierController->actionExport('3,4,6,7,8,9,10,...')
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('export', Array)
+#6 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#7 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#9 {main}
+2022-05-11 11:21:53 [::1][150][plinidmu4nv6qvfj7hh2pspur8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "system/supplier/export/ids/3,4,6,7,8,9,10,11,13". in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#2 {main}
+2022-05-11 11:22:28 [::1][150][plinidmu4nv6qvfj7hh2pspur8][error][yii\base\ErrorException:2] yii\base\ErrorException: implode(): Invalid arguments passed in E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\system\controllers\SupplierController.php:51
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'implode(): Inva...', 'E:\\phpstudy\\php...', 51, Array)
+#1 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\system\controllers\SupplierController.php(51): implode(',', '3,4,6,7,8,9,10,...')
+#2 [internal function]: app\modules\system\controllers\SupplierController->actionExport('3,4,6,7,8,9,10,...')
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('export', Array)
+#6 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#7 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#9 {main}
+2022-05-11 11:39:20 [::1][150][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: You are not allowed to perform this action. in E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\admin\filters\RbacFilter.php:82
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\ActionFilter.php(77): app\modules\admin\filters\RbacFilter->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(700): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(145): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#6 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#7 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#9 {main}
+2022-05-11 11:41:48 [::1][150][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: You are not allowed to perform this action. in E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\admin\filters\RbacFilter.php:82
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\ActionFilter.php(77): app\modules\admin\filters\RbacFilter->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(700): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(145): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#6 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#7 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#9 {main}
+2022-05-11 11:46:36 [::1][150][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: You are not allowed to perform this action. in E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\admin\filters\RbacFilter.php:82
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\ActionFilter.php(77): app\modules\admin\filters\RbacFilter->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(700): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(145): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#6 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#7 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#9 {main}
+2022-05-11 11:46:38 [::1][150][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: You are not allowed to perform this action. in E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\admin\filters\RbacFilter.php:82
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\ActionFilter.php(77): app\modules\admin\filters\RbacFilter->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(700): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(145): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#6 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#7 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#9 {main}
+2022-05-11 11:46:40 [::1][150][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: You are not allowed to perform this action. in E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\admin\filters\RbacFilter.php:82
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\ActionFilter.php(77): app\modules\admin\filters\RbacFilter->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(700): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(145): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#6 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#7 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#9 {main}
+2022-05-11 11:47:08 [::1][150][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: You are not allowed to perform this action. in E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\admin\filters\RbacFilter.php:82
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\ActionFilter.php(77): app\modules\admin\filters\RbacFilter->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(700): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(145): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#6 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#7 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#9 {main}
+2022-05-11 11:47:10 [::1][150][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: You are not allowed to perform this action. in E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\admin\filters\RbacFilter.php:82
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\ActionFilter.php(77): app\modules\admin\filters\RbacFilter->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(700): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(145): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#6 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#7 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#9 {main}
+2022-05-11 11:47:13 [::1][150][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: You are not allowed to perform this action. in E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\admin\filters\RbacFilter.php:82
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\ActionFilter.php(77): app\modules\admin\filters\RbacFilter->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(700): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(145): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#6 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#7 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#9 {main}
+2022-05-11 11:47:55 [::1][150][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: You are not allowed to perform this action. in E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\admin\filters\RbacFilter.php:82
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\ActionFilter.php(77): app\modules\admin\filters\RbacFilter->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(700): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(145): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#6 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('system/supplier...', Array)
+#7 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#9 {main}
+2022-05-11 11:59:51 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 11:59:53 [::1][-][-][warning][操作日志] /admin/user/logout 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 11:59:53 [::1][-][-][warning][操作日志] /admin/user/login 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 11:59:59 [::1][150][83v8f5i1jafuhu0ovpkn3aeki0][warning][操作日志] /admin/user/login 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 11:59:59 [::1][150][83v8f5i1jafuhu0ovpkn3aeki0][error][TypeError] TypeError: Argument 1 passed to app\behaviors\LogBehavior::addLog() must be an instance of yii\rbac\Permission, null given, called in E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\admin\controllers\UserController.php on line 53 and defined in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:82
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\admin\controllers\UserController.php(53): app\behaviors\LogBehavior->addLog(NULL)
+#1 [internal function]: app\modules\admin\controllers\UserController->actionLogin()
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/user/logi...', Array)
+#6 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#8 {main}
+2022-05-11 12:01:32 [::1][150][83v8f5i1jafuhu0ovpkn3aeki0][warning][操作日志] /admin/user/login 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:01:32 [::1][150][83v8f5i1jafuhu0ovpkn3aeki0][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: 您提交的数据无法被验证。 in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php:166
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/user/logi...', Array)
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#5 {main}
+2022-05-11 12:01:32 [::1][150][83v8f5i1jafuhu0ovpkn3aeki0][warning][操作日志] /common/site/error 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:01:38 [::1][150][-][warning][操作日志] /admin/user/login 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:01:39 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:01:41 [::1][150][-][warning][操作日志] /system/supplier/create 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:01:44 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:01:45 [::1][-][-][warning][操作日志] /admin/user/logout 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:01:46 [::1][-][-][warning][操作日志] /admin/user/login 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:01:52 [::1][150][-][warning][操作日志] /admin/user/login 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:01:53 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:02:08 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:02:10 [::1][-][-][warning][操作日志] /admin/user/logout 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:02:10 [::1][-][-][warning][操作日志] /admin/user/login 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:02:15 [::1][150][si3ohsugi29k1mio85c3aduk4p][warning][操作日志] /admin/user/login 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:02:16 [::1][150][si3ohsugi29k1mio85c3aduk4p][error][TypeError] TypeError: Argument 1 passed to app\behaviors\LogBehavior::addLog() must be an instance of yii\rbac\Permission, null given, called in E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\admin\controllers\UserController.php on line 53 and defined in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:82
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\manage\backend\modules\admin\controllers\UserController.php(53): app\behaviors\LogBehavior->addLog(NULL)
+#1 [internal function]: app\modules\admin\controllers\UserController->actionLogin()
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#5 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/user/logi...', Array)
+#6 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#8 {main}
+2022-05-11 12:02:42 [::1][150][si3ohsugi29k1mio85c3aduk4p][warning][操作日志] /admin/user/login 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:02:42 [::1][150][si3ohsugi29k1mio85c3aduk4p][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: 您提交的数据无法被验证。 in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php:166
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/user/logi...', Array)
+#3 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(32): yii\base\Application->run()
+#5 {main}
+2022-05-11 12:02:42 [::1][150][si3ohsugi29k1mio85c3aduk4p][warning][操作日志] /common/site/error 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:02:47 [::1][150][-][warning][操作日志] /admin/user/login 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:02:47 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:02:49 [::1][-][-][warning][操作日志] /admin/user/logout 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:02:50 [::1][-][-][warning][操作日志] /admin/user/login 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:02:55 [::1][150][-][warning][操作日志] /admin/user/login 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:02:57 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:03:01 [::1][150][-][warning][操作日志] /system/supplier/create 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:03:02 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:03:28 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:03:30 [::1][150][-][warning][操作日志] /system/supplier/create 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:03:31 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:03:33 [::1][-][-][warning][操作日志] /admin/user/logout 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:03:34 [::1][-][-][warning][操作日志] /admin/user/login 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:04:22 [::1][-][-][warning][操作日志] /admin/user/login 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:04:29 [::1][150][-][warning][操作日志] /admin/user/login 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:04:30 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:04:36 [::1][150][-][warning][操作日志] /system/supplier/create 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:04:43 [::1][150][-][warning][操作日志] /system/supplier/create 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:04:44 [::1][150][-][warning][操作日志] /system/supplier/view 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:04:45 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:04:48 [::1][150][-][warning][操作日志] /system/supplier/view 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:04:50 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:04:52 [::1][150][-][warning][操作日志] /system/supplier/update 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:04:56 [::1][150][-][warning][操作日志] /system/supplier/update 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:04:56 [::1][150][-][warning][操作日志] /system/supplier/view 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:04:58 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:05:05 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:05:09 [::1][150][-][warning][操作日志] /system/supplier/export 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:06:09 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:06:12 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:06:35 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:06:39 [::1][150][-][warning][操作日志] /system/supplier/update 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:06:41 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:08:25 [::1][150][-][warning][操作日志] /system/supplier/export 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:52:43 [::1][150][-][warning][操作日志] /system/supplier/create 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:52:45 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:53:50 [::1][-][-][warning][操作日志] /admin/user/logout 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:54:11 [::1][-][ca1os8mm9qtf79c61rgn8n882o][error][yii\redis\Connection] Failed to open redis DB connection (112.74.201.26:6379, database=2): 10060 - �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+
+    in E:\phpstudy\phpstudy_pro\WWW\manage\common\models\system\Setting.php:131
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\bootstrap\BootstrapConfig.php:40
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\bootstrap\BootstrapConfig.php:30
+2022-05-11 12:54:11 [::1][-][ca1os8mm9qtf79c61rgn8n882o][error][yii\db\Exception] yii\db\Exception: Failed to open redis DB connection (112.74.201.26:6379, database=2): 10060 - �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+ in E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2-redis\src\Connection.php:565
+Stack trace:
+#0 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2-redis\src\Connection.php(665): yii\redis\Connection->open()
+#1 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2-redis\src\Cache.php(154): yii\redis\Connection->executeCommand('GET', Array)
+#2 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\caching\Cache.php(134): yii\redis\Cache->getValue('c39bc38337f19c8...')
+#3 E:\phpstudy\phpstudy_pro\WWW\manage\common\models\system\Setting.php(131): yii\caching\Cache->get('c39bc38337f19c8...')
+#4 E:\phpstudy\phpstudy_pro\WWW\manage\backend\bootstrap\BootstrapConfig.php(40): common\models\system\Setting->getCache()
+#5 E:\phpstudy\phpstudy_pro\WWW\manage\backend\bootstrap\BootstrapConfig.php(30): app\bootstrap\BootstrapConfig->initc()
+#6 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(327): app\bootstrap\BootstrapConfig->bootstrap(Object(yii\web\Application))
+#7 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#8 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#9 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#10 E:\phpstudy\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#11 E:\phpstudy\phpstudy_pro\WWW\manage\backend\web\index.php(25): yii\base\Application->__construct(Array)
+#12 {main}
+Additional Information:
+�������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+
+2022-05-11 12:54:46 [::1][-][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:54:46 [::1][-][-][warning][操作日志] /admin/user/login 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:54:52 [::1][150][-][warning][操作日志] /admin/user/login 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:54:54 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:54:56 [::1][-][-][warning][操作日志] /admin/user/logout 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:54:56 [::1][-][-][warning][操作日志] /admin/user/login 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:56:49 [::1][150][-][warning][操作日志] /system/supplier/create 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:56:51 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:56:53 [::1][-][-][warning][操作日志] /admin/user/logout 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:56:54 [::1][-][-][warning][操作日志] /admin/user/login 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:57:03 [::1][150][-][warning][操作日志] /admin/user/login 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:57:04 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:57:07 [::1][150][-][warning][操作日志] /system/supplier/create 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:57:09 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:57:12 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:57:15 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:57:18 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:57:22 [::1][150][-][warning][操作日志] /system/supplier/view 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:57:24 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:57:26 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:57:29 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 12:57:30 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 14:42:05 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 14:43:11 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 14:43:12 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 14:43:51 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 14:43:53 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 14:44:04 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 14:44:06 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 14:45:26 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 14:45:28 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 14:45:49 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 14:45:50 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 14:46:48 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 14:46:49 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 14:47:31 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 14:47:33 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 14:48:49 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 14:48:51 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 14:50:25 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 14:50:27 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 14:51:28 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 14:51:30 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 14:52:10 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 14:53:02 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 14:53:03 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 14:55:21 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 14:55:23 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 14:57:33 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 14:57:34 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 14:58:54 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 14:58:55 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 15:00:58 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 15:00:59 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 15:01:24 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65
+2022-05-11 15:01:57 [::1][150][-][warning][操作日志] /system/supplier/index 此路由没有配置权限！
+    in E:\phpstudy\phpstudy_pro\WWW\manage\backend\behaviors\LogBehavior.php:65

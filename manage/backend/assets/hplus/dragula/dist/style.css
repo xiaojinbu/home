@@ -1,0 +1,23 @@
+.dragula-top-item{
+    float: left;
+    margin-right: 20px;
+    height: 32px;
+    padding-top:5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #d7d7d7;
+    font-weight: bold;
+    border: 2px #ccc solid;
+    margin-bottom: 5px;
+}
+#dragula-bottom, #dragula-top, #dragula-bottom1, #dragula-top1  {
+    border: 2px #0d8ddb solid;
+    border-radius: 10px;
+}
+#dragula-top, #dragula-top1{
+    padding: 8px 5px;
+}
+#dragula-bottom, #dragula-bottom1 {
+    margin-top:10px;
+    padding: 12px 5px;
+}
